@@ -14,7 +14,7 @@ body {
 }
 
 #top-logo {
-    width: 5em; /*80px*/
+    width: 6.25em; /*100px*/
     position: fixed;
     top: 5px;
     left: 1px;
@@ -23,6 +23,20 @@ body {
 #top-logo img {
     max-width: 100%;
 }
+
+nav.mobile-menu-wrapper {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    position: fixed;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+    z-index: 100;
+    display: block;
+    text-align: center;
+}
+
 
 nav.desktop-menu-wrapper {
     width: 80px;
@@ -34,8 +48,19 @@ nav.desktop-menu-wrapper {
     cursor: pointer;
     z-index: 100;
     display: none;
+    text-align: center;
 }
 
+nav.desktop-menu-wrapper img {
+    padding-top: 30px;
+    width: 25px;
+}
+
+nav.mobile-menu-wrapper img {
+    padding-top: 23px;
+    width: 22px;
+
+}
 .outer-container {
     width: 100vw;
     /*width: 89vw;*/
@@ -310,6 +335,10 @@ footer {
 
     nav.desktop-menu-wrapper {
         display: block;
+    }
+
+    nav.mobile-menu-wrapper {
+        display: none;
     }
 
     .outer-container {

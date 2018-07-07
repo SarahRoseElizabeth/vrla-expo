@@ -4,10 +4,12 @@ var i;
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
-        var content = document.getElementsByClassName("event-list");
-        if (content.style.display === "none") {
-            content.style.display = "block";
+        var content = this.nextElementSibling;
+        console.log(content);
+        if (content.style.display === "block") {
+            content.style.display = "none";
         } else {
             content.style.display = "block";
         }
     })};
+
