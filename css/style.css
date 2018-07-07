@@ -24,7 +24,7 @@ body {
     max-width: 100%;
 }
 
-nav.menu-wrapper {
+nav.desktop-menu-wrapper {
     width: 80px;
     height: 570px;
     background-color: #000;
@@ -33,6 +33,7 @@ nav.menu-wrapper {
     left: 135px;
     cursor: pointer;
     z-index: 100;
+    display: none;
 }
 
 .outer-container {
@@ -305,6 +306,10 @@ footer {
         position: fixed;
         top: 16px;
         left: 14px;
+    }
+
+    nav.desktop-menu-wrapper {
+        display: block;
     }
 
     .outer-container {
