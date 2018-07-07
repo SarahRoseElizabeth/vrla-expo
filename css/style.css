@@ -262,27 +262,90 @@ nav.mobile-menu-wrapper img {
     background-color: #a3d5bd;
 }
 
+.content .day-list {
+    align-items: initial;
+    width: 90vw;
+    margin-bottom: 100px;
+}
+
+
+
 .content .collapsible {
-    background-color: #eee;
-    color: #444;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     width: 100%;
     border: none;
-    text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1.25em;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.content .collapsible:before {
+    content: '+';
+    position: absolute;
+    display: inline-block;
+    left: 25px;
+    font-size: 20px;
+}
+
+.content .collapsible.active:before {
+    content: '-';
+    position: absolute;
+    display: inline-block;
+    left: 25px;
+    font-size: 20px;
 }
 
 .content .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.content .main-event h3 {
+    font-size: 1.15em;
+}
+
+.content .main-event h3 span.event-label {
+    background-color: #a3d5bd;
+    color: white;
+    font-size: 0.9em;
+    padding: 3px;
+    font-weight: 400;
+    margin-right: 20px;
 }
 
 .content .event-list {
-    padding: 0 18px;
+    padding: 0;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    font-family: "Roboto medium", sans-serif;
+    font-weight: 400;
+}
+
+.content .collapsible.active + .details-container > .event-list {
+    display: block;
+}
+
+.content .event-list ul {
+    padding: 0;
+}
+
+.content .event-list ul li {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -315,7 +378,7 @@ nav.mobile-menu-wrapper img {
 
 footer {
     background-color: #a3d5bd;
-    height: 400px;
+    height: 250px;
     left: 0;
     bottom: 0;
 }
@@ -365,6 +428,27 @@ footer {
 
     .content table.desktop-pricing {
         display: table;
+    }
+
+    .content .collapsible {
+        width: 300px;
+    }
+
+    .content .day-list {
+        align-items: initial;
+        width: 80vw;
+    }
+
+    .content .day-list .day-list-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 40px;
+    }
+
+    .content .day-list .day-list-container .details-container {
+        margin-left: 50px;
+        margin-top: 35px;
     }
 
 }
