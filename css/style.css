@@ -104,13 +104,16 @@ nav.desktop-menu-wrapper img {
 
 .gradient-container .title-container {
     margin: 0;
-    padding-top: 50%;
+    padding-top: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .gradient-container .artwork {
     width: 65vw;
     position: absolute;
-    top: 100px;
+    top: 130px;
     z-index: 100;
 }
 
@@ -126,7 +129,11 @@ nav.desktop-menu-wrapper img {
     font-size: 2em; /*32px*/
 }
 
+.gradient-container .title-container h2.date {
+    margin: 0;
+    padding-right: 10px;
 
+}
 
 
 .content {
@@ -437,6 +444,10 @@ footer {
         height: 90vh;
     }
 
+    .gradient-container .artwork {
+        top: 220px;
+    }
+
     .gradient-container .title-container h1 {
         font-size: 8.125em; /* 130px*/
     }
@@ -488,15 +499,19 @@ footer {
     .gradient-container .title-container {
         width: 75%;
         margin: 0;
-        padding-top: 50%;
-        top: 140px;
+        padding-top: 55%;
+        top: 150px;
         position: absolute;
+    }
+
+    .gradient-container .artwork {
+        top: 170px;
     }
 
     .gradient-container .title-container h1.title1 {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 5vw;
     }
 
     .gradient-container .title-container h1.title2 {
@@ -507,7 +522,7 @@ footer {
 
     .gradient-container .title-container h2.date {
         position: absolute;
-        bottom: -8%;
+        bottom: -50px;
         right: 3%;
 
     }
