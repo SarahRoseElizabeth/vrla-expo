@@ -145,7 +145,6 @@ nav.desktop-menu-wrapper img {
 .gradient-container .title-container h2.date {
     margin: 0;
     padding-right: 10px;
-
 }
 
 .content {
@@ -164,7 +163,7 @@ nav.desktop-menu-wrapper img {
     margin: 0;
     /*left: -2.25%;*/
     font-family: "Cocogoose SemiBold", sans-serif;
-    font-size: 3.4375em; /*55px*/
+    font-size: 3.2em; /*55px*/
     letter-spacing: 0.025em;
     padding-top: 3.125rem; /*50px*/
     padding-bottom: 1.5rem;
@@ -399,7 +398,7 @@ nav.desktop-menu-wrapper img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 6.5em; /*104px*/
+    max-width: 6.5em; /*104px*/
 }
 
 .content .icons figure.logo-resize {
@@ -492,6 +491,7 @@ footer .arrow-up a {
 
     .content > h2 {
         width: 100%;
+        font-size: 3.4375em; /*55px*/
     }
 
     .content table.mobile-pricing {
