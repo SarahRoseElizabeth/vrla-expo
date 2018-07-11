@@ -34,7 +34,7 @@ nav.desktop-menu-wrapper {
     right: 17px;
     left: auto;
     cursor: pointer;
-    z-index: 100;
+    z-index: 300;
     transition: 0.4s all ease-out;
     max-width: 400px;
     overflow: hidden;
@@ -74,6 +74,11 @@ nav.desktop-menu-wrapper .menu-container-inner ul li {
     text-align: left;
 }
 
+nav.desktop-menu-wrapper .menu-container-inner ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
 nav.desktop-menu-wrapper .menu-container-inner ul li span.highlight {
     color: #a3d5bd;
 }
@@ -82,7 +87,7 @@ nav.desktop-menu-wrapper .menu-container-inner ul li span.highlight:hover {
     color: #fff;
 }
 
-nav.desktop-menu-wrapper .menu-container-inner ul li:hover {
+nav.desktop-menu-wrapper .menu-container-inner ul li a:hover {
     color: #a3d5bd;
 }
 
@@ -378,11 +383,6 @@ nav.desktop-menu-wrapper img {
     margin-bottom: 20px;
 }
 
-/*.content .day-list .day-list-container .details-container {*/
-    /*min-width: 70%;*/
-/*}*/
-
-
 .content .icons {
     display: flex;
     justify-content: center;
@@ -493,6 +493,7 @@ footer .arrow-up a {
     .content > h2 {
         width: 100%;
     }
+
     .content table.mobile-pricing {
         display: none;
     }
@@ -502,16 +503,17 @@ footer .arrow-up a {
     }
 
     .content .collapsible {
-        width: 300px;
+        width: 40%;
+        flex-shrink: 0;
     }
 
     .content .day-list {
         width: 75vw;
     }
 
-    .content .day-list > * {
-        margin-left: 12vw;
-    }
+    /*.content .day-list > * {*/
+        /*margin-left: 12vw;*/
+    /*}*/
 
     .content .day-list .day-list-container {
         display: flex;
@@ -562,9 +564,11 @@ footer .arrow-up a {
         position: absolute;
         bottom: -50px;
         right: 3%;
-
     }
+
+
 }
+
 
 
 

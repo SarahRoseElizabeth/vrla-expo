@@ -83,13 +83,6 @@ $(document).ready(function(){
         .to("#leaf-9",17,{x:'+=200', ease: Power0.linear, repeat: -1}, 0)
         .to("#leaf-9",5,{y:'+=10', ease: Power1.easeInOut, yoyo: true, repeat: -1}, 7);
 
-
-    let tlLetters = new TimelineMax();
-
-    tlLetters
-        .staggerFrom(".letter1",0.75,{y: 100, autoAlpha: 0, ease: Power1.easeOut}, 2)
-        .staggerFrom(".letter2",0.75,{y: -100, autoAlpha: 0, ease: Power1.easeOut}, 2);
-
 });
 
 
