@@ -50,11 +50,10 @@ nav.desktop-menu-wrapper.menu-click {
     z-index: 200;
 }
 
-
 nav.desktop-menu-wrapper .menu-container-inner {
     position: relative;
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1.25em; /*20px*/
     letter-spacing: 1px;
     font-weight: 700;
     line-height: 50px;
@@ -108,12 +107,9 @@ nav.desktop-menu-wrapper img {
 .gradient-container {
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
-    /*height: 1100px;*/
     height: 700px;
     background: linear-gradient(#a3d5bd,#f5f5f5) no-repeat top left;
-
 }
 
 .gradient-container .title-container {
@@ -133,13 +129,18 @@ nav.desktop-menu-wrapper img {
 .gradient-container .title-container h1 {
     margin: 0;
     font-family: "Cocogoose SemiBold", sans-serif;
-    font-size: 6em;
+    font-size: 6em; /*96px*/
     letter-spacing: 0.05em;
 }
 
 .gradient-container .title-container h2 {
     font-family: "Roboto", sans-serif;
     font-size: 2em; /*32px*/
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 3.25s;
 }
 
 .gradient-container .title-container h2.date {
@@ -152,16 +153,13 @@ nav.desktop-menu-wrapper img {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-items: center;
-
+    justify-content: center;
     align-items: center;
 }
-
 
 .content h2 {
     position: inherit;
     margin: 0;
-    /*left: -2.25%;*/
     font-family: "Cocogoose SemiBold", sans-serif;
     font-size: 3.2em; /*55px*/
     letter-spacing: 0.025em;
@@ -176,10 +174,6 @@ nav.desktop-menu-wrapper img {
     letter-spacing: 0.025em;
 }
 
-.content .desktop-table {
-    /*margin: 0 auto;*/
-}
-
 .content table.desktop-pricing {
     width: 75vw; /*1200px*/
     border-collapse: collapse;
@@ -187,7 +181,6 @@ nav.desktop-menu-wrapper img {
     margin-bottom: 25px;
     margin-top: 25px;
     font-family: "Roboto medium", sans-serif;
-
     display: none;
 }
 
@@ -198,24 +191,20 @@ nav.desktop-menu-wrapper img {
     padding: 8px 20px 8px 20px;
     line-height: 27px;
     width: 12.5em; /*200px*/
-
 }
 
 .content .desktop-pricing tbody {
     text-align: center;
-    font-size: 16px;
     line-height: 26px;
     font-weight: 400;
 }
 
-
 .content .desktop-pricing tbody tr td.text {
-    width: 12.5rem; /*200px*/
+    width: 200px;
     text-align: end;
     font-size: 0.875rem; /*14px*/
     line-height: 1rem;
 }
-
 
 .content .desktop-pricing tbody tr td {
     border-right: 3px solid #fff;
@@ -234,7 +223,6 @@ nav.desktop-menu-wrapper img {
 
 .content table.mobile-pricing {
     border-collapse: collapse;
-    /*width: 21.875em; !*350px*!*/
     margin-top: 1.25rem;
     margin-left: 20px;
     margin-right: 20px;
@@ -295,8 +283,6 @@ nav.desktop-menu-wrapper img {
     margin-bottom: 100px;
 }
 
-
-
 .content .collapsible {
     display: inline-block;
     position: relative;
@@ -315,7 +301,6 @@ nav.desktop-menu-wrapper img {
     font-weight: 800;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
-    /*flex-shrink: 0;*/
 }
 
 
@@ -340,7 +325,6 @@ nav.desktop-menu-wrapper img {
     color: #000;
 }
 
-
 .content .main-event h3 {
     font-size: 1.15em;
 }
@@ -356,7 +340,6 @@ nav.desktop-menu-wrapper img {
 
 .content .event-list {
     padding: 0;
-    /*display: none;*/
     overflow: hidden;
     font-family: "Roboto medium", sans-serif;
     font-weight: 400;
@@ -367,7 +350,6 @@ nav.desktop-menu-wrapper img {
 }
 
 .content .collapsible.active + .details-container > .event-list {
-    /*display: block;*/
     opacity: 1;
     max-height: 100vh;
 }
@@ -428,9 +410,12 @@ footer .arrow-up a {
     border-bottom: 20px solid #000;
 }
 
+@keyframes fadeIn {
+    from { opacity:0; }
+    to { opacity:1; }
+}
 
-
-
+/*desktop*/
 @media screen and (min-width: 800px) {
 
     body {
@@ -467,7 +452,6 @@ footer .arrow-up a {
     }
 
     .outer-container {
-        /*width: 89vw;*/
         margin-left: 170px;
     }
 
@@ -511,25 +495,20 @@ footer .arrow-up a {
         width: 75vw;
     }
 
-    /*.content .day-list > * {*/
-        /*margin-left: 12vw;*/
-    /*}*/
-
     .content .day-list .day-list-container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         margin-left: 15vw;
-
     }
 
     .content .day-list .day-list-container .details-container {
         margin-left: 50px;
         margin-top: 35px;
     }
-
 }
 
+/*tablet*/
 @media screen and (min-width: 500px) {
 
     .gradient-container .title-container {
@@ -565,8 +544,6 @@ footer .arrow-up a {
         bottom: -50px;
         right: 3%;
     }
-
-
 }
 
 
