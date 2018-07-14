@@ -88,7 +88,7 @@ Line 18 - 81 (additional hand-coded animation using GSAP)
 
 Current known bugs: 
 1) Only in Firefox do the mobile pricing tables not resize as they are supposed to.
-2) If you reload while in the mobile view of chromes inspector, the menu icon disappears - this is related to the aos animation and does not happen on a real phone. 
+2) If you reload while in the mobile view of chromes inspector, the menu icon disappears - this appears to be a bug with chrome as it does not happen when tested on a real phone.
 3)The font weight of body text changes in Firefox and safari. 
 
 
