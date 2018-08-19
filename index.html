@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
 </head>
 <body>
+    <div class="system-message">
+      <p class="system-message-text"></p>
+    </div>
     <div class="wrapper" id="top">
         <div id="top-logo" data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">
             <img src="img/blacklogo.png" alt=""/>
@@ -27,8 +30,8 @@
                     <li><a href="#passes">PASSES</a></li>
                     <li><a href="#schedule">SCHEDULE</a></li>
                     <li><a href="#sponsors">SPONSORS</a></li>
-                    <li>VIDEO</li>
-                    <li>ABOUT</li>
+                    <li onclick="systemMessage(event)">VIDEO</li>
+                    <li onclick="systemMessage(event)">ABOUT</li>
                 </ul>
             </div>
         </nav>
@@ -202,7 +205,7 @@
                 </table>
 
                 <!--call to action button -->
-                <button class="button">BUY TICKETS</button>
+                <button class="button" onclick="systemMessage(event)">BUY TICKETS</button>
 
                 <!--entire event schedule -->
                 <h2 id="schedule" data-aos="fade-up" data-aos-duration="800">SCHEDULE</h2>
@@ -277,7 +280,7 @@
                         <button class="collapsible">4:30 PM</button>
                         <div class="details-container">
                             <div class="main-event">
-                                <h3><span class="event-label">PANEL</span>ARTIFICAL MINDS IN VIRTUAL SPACES</h3>
+                                <h3><span class="event-label">PANEL</span>ARTIFICIAL MINDS IN VIRTUAL SPACES</h3>
                             </div>
                             <div class="event-list">
                                 <ul>

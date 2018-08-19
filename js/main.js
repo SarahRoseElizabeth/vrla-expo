@@ -1,5 +1,16 @@
 AOS.init();
 
+function systemMessage(event, message = ''){
+  const $messageBox = $('.system-message');
+  const $messageBoxText = $messageBox.children('.system-message-text');
+  const inputMessage = message ? message : "Want to see more? This link is just a mockup link. Scroll down to view the project.";
+  $messageBox.addClass('showing').removeClass('hidden');
+  $messageBoxText.text(inputMessage);
+  setTimeout(function(){
+    $messageBox.removeClass('showing').addClass('hidden');
+  }, 5000);
+}
+
 $(document).ready(function(){
 
     let collapsible = $(".collapsible"),
@@ -79,10 +90,3 @@ $(document).ready(function(){
         .to("#leaf-9",17,{x:'+=200', ease: Power0.linear, repeat: -1}, 0)
         .to("#leaf-9",5,{y:'+=10', ease: Power1.easeInOut, yoyo: true, repeat: -1}, 7);
 });
-
-
-
-
-
-
-
